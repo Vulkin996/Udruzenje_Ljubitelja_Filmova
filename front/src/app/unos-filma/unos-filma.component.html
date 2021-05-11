@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="columns-block container">
+        <h1>Unos novog filma</h1>
+<br>
+<br>
+        <form (ngSubmit)=enterInfo(filmForm) #filmForm="ngForm">
+            <div class="mb-3">
+                <label for="inputNaziv" class="form-label">Naziv</label>
+                <input type="text" class="form-control" ngModel name="naziv" >
+              </div>
+              <div class="mb-3">
+                <label for="inputTrajanje" class="form-label">Trajanje</label>
+                <input type="text" class="form-control" ngModel name="trajanje">
+              </div>
+              <div class="mb-3">
+                <label for="inputZanr" class="form-label">Zanr</label>
+                <input type="text" class="form-control" ngModel name="zanr" >
+              </div>
+              <div class="mb-3">
+                <label for="inputOpis" class="form-label">Opis</label>
+                <input type="text" class="form-control" ngModel name="opis">
+              </div>
+              <div class="mb-3">
+                <label for="inputTrailer" class="form-label">Trailer</label>
+                <input type="text" class="form-control" ngModel name="trailer">
+              </div>
+              <button type="submit" class="btn btn-primary">Dodaj</button>
+        </form>
+    </div>
+</div>
